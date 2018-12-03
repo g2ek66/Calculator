@@ -7,7 +7,7 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  value: string = "";
+  value = '';
   constructor(public navCtrl: NavController) {
 
   }
@@ -24,31 +24,31 @@ export class HomePage {
 
     deleteAll()
     {
-      this.value = "";
+      this.value = '';
     }
 
     takeDiv()
     {
         if(this.value.length != 0 && this.value.substr(this.value.length -1) != '*' && this.value.substr(this.value.length -1) != '-' && this.value.substr(this.value.length -1) != '+' && this.value.substr(this.value.length -1) != '/')
-          this.value = this.value+"/";
+          this.value = this.value+'/';
     }
 
     takeAdiction()
     {
         if(this.value.length != 0 && this.value.substr(this.value.length -1) != '*' && this.value.substr(this.value.length -1) != '-' && this.value.substr(this.value.length -1) != '+' && this.value.substr(this.value.length -1) != '/')
-          this.value = this.value+"+";
+          this.value = this.value+'+';
     }
 
     takeSubstraction()
     {
         if(this.value.length != 0 && this.value.substr(this.value.length -1) != '*' && this.value.substr(this.value.length -1) != '-' && this.value.substr(this.value.length -1) != '+' && this.value.substr(this.value.length -1) != '/')
-          this.value = this.value+"-";
+          this.value = this.value+'-';
     }
 
     takeMutiplication()
     {
         if(this.value.length != 0 && this.value.substr(this.value.length -1) != '*' && this.value.substr(this.value.length -1) != '-' && this.value.substr(this.value.length -1) != '+' && this.value.substr(this.value.length -1) != '/')
-          this.value = this.value+"*";
+          this.value = this.value+'*';
     }
 
     equal()
